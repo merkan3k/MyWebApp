@@ -1,1 +1,2 @@
-com/merkan/ApplicationController.class
+com\merkan\Model\UsersService.class
+com\merkan\Servlet\ApplicationController.class

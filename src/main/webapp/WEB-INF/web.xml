@@ -6,12 +6,12 @@
 
   <servlet>
     <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>com.merkan.ApplicationController</servlet-class>
+    <servlet-class>com.merkan.Servlet.ApplicationController</servlet-class>
   </servlet>
 
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/info_send2</url-pattern>
+    <url-pattern>/info_send</url-pattern>
   </servlet-mapping>
 
 </web-app>
