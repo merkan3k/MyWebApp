@@ -33,7 +33,7 @@ public class ApplicationController extends HttpServlet {
 
         if (!login.isEmpty() && !password.isEmpty() && UsersService.isLoginPresent(login)) {
             if(UsersService.isUserExist(login, password)) {
-                writer.println("User registration is successful.");
+                getServletContext().getRequestDispatcher("/result.jsp").forward(httpServletRequest, httpServletResponse);
             } else {
                 writer.println("User with such login is already registered.");
                 getServletContext().getRequestDispatcher("/").include(httpServletRequest, httpServletResponse);
