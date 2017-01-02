@@ -4,18 +4,17 @@ package com.merkan.Servlet;
 import com.merkan.Model.UsersService;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by volodymyr on 30.12.16.
  */
-
+@WebServlet(urlPatterns = "/info_send", loadOnStartup = 1)
 public class ApplicationController extends HttpServlet {
 
     @Override
@@ -24,7 +23,7 @@ public class ApplicationController extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+    public void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
         PrintWriter writer = httpServletResponse.getWriter();
         httpServletResponse.setContentType("text/html");
 

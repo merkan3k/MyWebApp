@@ -6,6 +6,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="mywebapp" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.9.5" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:1.3.2" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/mywebapp/META-INF/MANIFEST.MF" />

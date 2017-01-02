@@ -1,17 +1,10 @@
-<web-app version="2.5"
-         xmlns="http://java.sun.com/xml/ns/javaee"
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
-                        http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
 
-  <servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>com.merkan.Servlet.ApplicationController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/info_send</url-pattern>
-  </servlet-mapping>
+    <error-page>
+        <location>/error.jsp</location>
+    </error-page>
 
 </web-app>
